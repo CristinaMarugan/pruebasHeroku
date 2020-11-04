@@ -3,5 +3,3 @@ script:
   - mvn test
 before_install:
   - chmod +x mvnw  
-notifications:
-  slack: uclm-grupo:T8sWAkWMCWVNyfOHGX4vMo00
