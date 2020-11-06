@@ -3,5 +3,7 @@ script:
   - mvn test
 before_install:
   - chmod +x mvnw  
+deploy:
+  provider: heroku
 notifications:
   slack: uclm-grupo:T8sWAkWMCWVNyfOHGX4vMo00
