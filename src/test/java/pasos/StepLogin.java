@@ -2,8 +2,6 @@ package pasos;
 
 import javax.servlet.http.HttpSession;
 
-import org.json.JSONObject;
-
 import com.agibilibus.SIGET.model.Sesion;
 import com.agibilibus.SIGET.model.Usuario;
 

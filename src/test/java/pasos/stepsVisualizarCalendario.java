@@ -14,7 +14,6 @@ public class stepsVisualizarCalendario {
 	@Given("^Estoy autenticado como usuario en el sistema /.*/ /.*/ /.*/$")
 	public void estoy_autenticado_como_usuario (HttpSession httpSession, String userName, String pwd) throws Throwable{
 		Sesion.get().login(httpSession, userName, pwd);
-		
 		throw new PendingException();
 	}
 	
@@ -24,9 +23,9 @@ public class stepsVisualizarCalendario {
 		//Manager.get().cargarCalendario();
 	}
 	
-	@Then("^Veo mis reuniones de la semana$")
-	public void cargarReuniones() throws Throwable{
-		//Manager.get().cargarReuniones();
+	@Then("^Veo mis reuniones de la semana /.*/$")
+	public void cargarReuniones(Usuario u) throws Throwable{
+		Reunion.get().getReuniones(u);
 	}
 	
 }
